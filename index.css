@@ -1,0 +1,158 @@
+*, *::before, *::after {
+    box-sizing: border-box;  
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: url("images/THJJRUhNlEc.png");
+    background-size: cover;
+    height: 208px;
+    width: 100vw;
+    font-family: 'Inter', sans-serif;
+    background-color: black;
+}
+.header-text{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+ 
+}
+h1{
+    margin-top: 3em;
+}
+
+div.header-text > p1 {
+    margin-top: 6.5em;
+}
+.search{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-text {
+    /* white */
+
+    background: #FFFFFF;
+    /* gray/300 */
+
+    border: 1px solid #D1D5DB;
+    /* shadow/sm */
+
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    width: 462px;
+    height: 2.5em;
+    margin-top: 2em
+}
+button {
+    width: 120px;
+    height: 2.5em;
+    background: #F9FAFB;
+    border: 1px solid #D1D5DB;
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 2em
+}
+
+main {
+   
+     margin: 50px auto;
+     width: 600px;
+     padding: 20px;
+
+}
+
+#images-main{
+    display: block;
+    margin: 5em auto;
+}
+h2{
+text-align: center;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+text-align: center;
+
+color: #DFDDDD;
+}
+
+
+img {
+    width: 150px;
+    margin-bottom: 15px;
+}
+.movies-details {
+    display: flex;
+    flex-direction: row;
+}
+
+.sub-details {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.sub {
+    display: flex;
+}
+
+ div.sub > i {
+    margin-top: 20px;
+    margin-left: 50px;
+    color: darkgoldenrod
+}
+.sub-details2 {
+    display: flex;
+    justify-content: flex-start;
+    
+}
+
+p3{
+       font-size: 13px;
+    font-weight: bolder; 
+}
+
+p4 {
+    font-size: 13px;
+    font-weight: bolder;
+    margin-left: 20px
+} 
+
+#watchlist {
+    margin-left: 50px;
+    cursor: pointer;
+
+}
+
+span {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    margin-left: 10px;
+}
+.plot {
+    margin-top: 30px;
+}
+
+p1:hover {
+    cursor: pointer;
+    
+}
+
+#watchlist1 {
+
+/* identical to box height, or 167% */
+color: #111827;
+margin-left: 50px;
+    cursor: pointer;
+}
