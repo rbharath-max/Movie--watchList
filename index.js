@@ -3,7 +3,7 @@ const inputEl = document.getElementById("input-el")
 const replaceMovies = document.getElementById("replace-movie")
 
 const movieArray =[]
-let watchList = []
+let watchList = JSON.parse(localStorage.getItem("watchListMovies")) || []
 
 
 
@@ -44,7 +44,6 @@ btn.addEventListener("click", (e)=> {
 
 function handleWatchList(mov){
     const targetObj = movieArray.find((id) => id.imdbID === mov)
-        console.log(targetObj)
 
     watchList.push(targetObj)
     console.log(watchList)
@@ -91,7 +90,6 @@ function renderMovie(movies){
 }
 
 document.getElementById("watch-html-two").addEventListener("click", (e) => {
-    console.log("buttonclicked")
 window.location.assign("watchlist.html")
 })
 

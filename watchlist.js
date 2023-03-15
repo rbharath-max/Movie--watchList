@@ -4,7 +4,6 @@ const rep = document.getElementById("replace-watchmovie")
 
 const wListMovies = JSON.parse(localStorage.getItem("watchListMovies"))
 
-console.log(wListMovies)
 
 document.addEventListener("click", (e) => {
     if(e.target.dataset.rem){
@@ -16,13 +15,11 @@ function handleRemove(mov){
     const removeBt = wListMovies.findIndex((data) => {
         return data.imdbID === mov
     })
-    console.log(removeBt)
-    console.log(wListMovies)
+    
 
     wListMovies.splice(removeBt, 1)
     localStorage.setItem("watchListMovies", JSON.stringify(wListMovies))
     renderdatas()
-    console.log(wListMovies)
         
    
    
@@ -32,7 +29,6 @@ function handleRemove(mov){
 
 document.getElementById("search-movies").addEventListener("click", (e) => {
     e.preventDefault
-    console.log("clicked")
     window.location.assign("index.html")
 })
 
